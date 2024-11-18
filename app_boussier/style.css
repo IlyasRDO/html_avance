@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#checkboxContainer {
+    margin-bottom: 20px;
+}
+
+#checkboxContainer label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+canvas {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
