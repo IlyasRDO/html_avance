@@ -1,33 +1,27 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graphique des Émissions de CO₂ par Région</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Émissions de CO₂ par Région</h1>
-
-    <div id="checkboxContainer">
-        <label><input type="checkbox" value="Asia" checked> Asia</label>
-        <label><input type="checkbox" value="Europe" checked> Europe</label>
-        <label><input type="checkbox" value="Africa" checked> Africa</label>
-        <label><input type="checkbox" value="Americas" checked> Americas</label>
-        
-        <barre_verticale></barre_verticale> {
-        <position: absolute;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        width: 50px;
-        background: url('noir.webp') repeat-y;> 
-}
+    <div id="sidebar">
+        <h2>Filtres</h2>
+        <div id="checkboxContainer">
+            <label><input type="checkbox" value="Asia" checked> Asia</label><br>
+            <label><input type="checkbox" value="Europe" checked> Europe</label><br>
+            <label><input type="checkbox" value="Africa" checked> Africa</label><br>
+            <label><input type="checkbox" value="Americas" checked> Americas</label><br>
+        </div>
     </div>
-    
 
-
-    <canvas id="regionChart" width="800" height="400"></canvas>
+    <div id="content">
+        <h1>Émissions de CO₂ par Région</h1>
+        <canvas id="regionChart" width="800" height="400"></canvas>
+    </div>
 </body>
 </html>

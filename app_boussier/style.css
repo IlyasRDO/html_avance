@@ -1,12 +1,31 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    text-align: center;
-    padding: 20px;
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #BCEEFF;
+    color: #333;
+    display: flex;
+}
+
+/* Colonne noire sur le côté gauche */
+#sidebar {
+    width: 200px; 
+    background-color: #007BA1;
+    color: #FFF;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#sidebar h2 {
     margin-bottom: 20px;
 }
 
@@ -15,10 +34,18 @@ h1 {
 }
 
 #checkboxContainer label {
-    margin-right: 10px;
+    display: block;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
+/* Contenu principal */
+#content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Canvas */
 canvas {
     background-color: #fff;
     border: 1px solid #ccc;
